@@ -2,6 +2,9 @@ a{
     text-decoration: none;
     color: rgb(32, 32, 32);
 }
+b{
+    font-weight: bold;
+}
 
 *{
     box-sizing: border-box;
@@ -72,13 +75,11 @@ ion-icon{
 }
 
 main{
-    background-color: burlywood;
     display: flex;
     justify-content: center;
 }
 
 .container-principal{
-    background-color: aquamarine;
     display: flex;
     flex-direction: column;
 }
@@ -150,17 +151,19 @@ main{
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-weight:500 ;
+}
+.postagem-img{
+    width: 614px;
 }
 
 .barra-postagem{
-    background-color: aliceblue;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
-    font-weight:500 ;
 
 }
 .barra-postagem img{
@@ -170,6 +173,9 @@ main{
     display: flex;
     margin: 13px 14px;
 
+}
+.postagem .postagem-img img {
+    width: 100%;
 }
 
 .barra-postagem .user {
@@ -184,9 +190,30 @@ main{
     align-items: center;
 }
 .barra-postagem ion-icon{
-    margin-right:13px;
-    width: 17px; 
+    margin:5px 13px;
+    width: 20px; 
        
 }
+.barra-curtidas{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left:10px;
+
+}
+
+.box-icons ion-icon{
+    width: 20px;
+
+}
+.foto-perfil-q-curtiu{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: block;
+    margin: 5px 5px;
+}
+
 
 

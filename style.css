@@ -8,7 +8,7 @@ a{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     text-decoration: none;
 }
 
@@ -141,4 +141,52 @@ main{
     text-overflow: ellipsis;
     margin: 5px 0px;
 }
+
+
+.postagem{
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.barra-postagem{
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-weight:500 ;
+
+}
+.barra-postagem img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    margin: 13px 14px;
+
+}
+
+.barra-postagem .user {
+    font-size: 15px;
+    color: #262626;
+    display: flex;
+    text-overflow: ellipsis;
+}
+
+.perfil-user{
+    display: flex;
+    align-items: center;
+}
+.barra-postagem ion-icon{
+    margin-right:13px;
+    width: 17px; 
+       
+}
+
 

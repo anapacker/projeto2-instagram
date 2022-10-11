@@ -20,7 +20,6 @@ header {
     background-color: #ffffff;
     position: fixed;
     border: 1px solid #DBDBDB;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 2;
     top: 0;
     left: 0;
@@ -85,6 +84,7 @@ main{
 .container-principal{
     width:614px;
     display: flex;
+
     flex-direction: column;
 }
 
@@ -93,7 +93,7 @@ main{
     display: flex;
     align-items: center;
     position:relative;
-    margin-top: 146px;
+    margin-top: 10px;
     border: 1px solid #DBDBDB;
     border-radius: 2px;
     overflow: hidden;
@@ -222,7 +222,6 @@ main{
     margin-top: 57px;
     display: flex;
     align-items: center;
-    flex-direction: column;
     padding: 0px 17px
 }
 
@@ -305,5 +304,81 @@ main{
 .infos-pag-insta {
     margin-bottom: 26px;
 }
+
+@media (max-width: 935px) {
+.caixa-direita {
+    display: none;
+ }
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+.borda {
+    width: 1px;
+    height: 22px;
+    background: #dbdbdb;
+ }
+}
+.barra-topo-mobile {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    border-bottom: 1px solid #dbdbdb;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+}
+  
+@media (max-width: 614px) {
+.barra-topo-mobile {
+    box-shadow: none;
+}
+header {
+    display: none;
+}
+  
+.container-principal{
+    width: 100%;
+    margin-top: none;
+}
+.barra-stories ion-icon[name="chevron-forward-circle"] {
+    display: none;
+}
+
+.barra-stories {
+    box-shadow: none;
+    margin-top: none;
+    margin-bottom: none;
+}
+.menu-mobile {
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px 20px; */
+ }
+}
+  
+@media (min-width: 614px) {
+.barra-topo-mobile {
+    display: none;
+}
+.menu-mobile {
+    display: none;
+}
+
+}
+  
 
 
